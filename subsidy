@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フルリノベーション（二世帯・古民家） | 有限会社ヤマト建設</title>
+    <meta name="description" content="久留米でフルリノベーションならヤマト建設。古民家再生、二世帯住宅への改修、中古住宅リノベなど、ライフスタイルに合わせた劇的なビフォーアフターをご提案します。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yamato-main': '#EB8A44', // オレンジ
+                        'yamato-black': '#1F2937', // 黒系アクセント
+                        'yamato-bg': '#FFFFFF', // 白背景
+                        'yamato-light': '#FFF4EC', // 薄いオレンジ
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'serif': ['Noto Serif JP', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-yamato-black bg-yamato-bg">
+
+    <!-- ヘッダー (共通) -->
+    <header class="bg-white text-yamato-black py-3 sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1>
+                <a href="index.html" class="flex items-center text-2xl font-bold font-serif group">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2 text-yamato-main" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-yamato-black">有限会社</span><span class="text-yamato-black">ヤマト建設</span>
+                </a>
+            </h1>
+            <nav class="hidden lg:flex items-center space-x-6 font-medium">
+                <a href="performance.html" class="hover:text-yamato-main transition pb-1">性能向上リノベ</a>
+                <a href="#" class="text-yamato-main border-b-2 border-yamato-main pb-1">フルリノベ</a>
+                <a href="#" class="hover:text-yamato-main transition pb-1">補助金ガイド</a>
+                <a href="#" class="hover:text-yamato-main transition pb-1">施工事例</a>
+                <a href="concept.html" class="hover:text-yamato-main transition pb-1">コンセプト</a>
+                <a href="#" class="hover:text-yamato-main transition pb-1">会社案内</a>
+            </nav>
+            <div class="hidden lg:block">
+                <a href="#" class="bg-yamato-main hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-sm transition shadow-md text-sm flex flex-col items-center">
+                    <span>無料診断・相談</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FV: フルリノベトップ -->
+    <div class="relative h-[400px] md:h-[500px] flex items-center justify-center">
+        <img src="https://placehold.jp/1600x900.png?text=Full+Renovation+Hero" alt="開放的なリビングリノベーション" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 text-center text-white container mx-auto px-4">
+            <p class="text-yamato-main font-bold tracking-widest mb-4 text-lg">FULL RENOVATION</p>
+            <h2 class="text-3xl md:text-5xl font-bold font-serif leading-tight mb-6">
+                建て替えよりも、<br>
+                「賢く」叶える理想の家。
+            </h2>
+            <p class="text-lg md:text-xl font-medium">
+                思い出はそのままに、性能とデザインを一新。<br class="md:hidden">新築の2/3の費用で実現する選択肢。
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 1: ヤマト建設のフルリノベーションとは -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold font-serif text-yamato-black mb-6">
+                    デザイン × 性能 × 地域性
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    ヤマト建設のフルリノベーションは、単に内装を新しくするだけではありません。<br>
+                    総合建設業としての「構造補強」、久留米の気候に合わせた「断熱設計」、<br>
+                    そして学生たちとの連携による「新しいデザイン提案」を融合させます。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 特徴1 -->
+                <div class="text-center p-6 border border-gray-100 hover:shadow-lg transition rounded-sm">
+                    <div class="text-yamato-main mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">間取りの自由設計</h3>
+                    <p class="text-sm text-gray-600">構造計算に基づき、壁を取り払った広々LDKを実現。生活動線をゼロから見直します。</p>
+                </div>
+                <!-- 特徴2 -->
+                <div class="text-center p-6 border border-gray-100 hover:shadow-lg transition rounded-sm">
+                    <div class="text-yamato-main mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">コストパフォーマンス</h3>
+                    <p class="text-sm text-gray-600">基礎や柱を活かすことで、新築注文住宅の約60〜70%の費用で、新築同様の性能と見た目に。</p>
+                </div>
+                <!-- 特徴3 -->
+                <div class="text-center p-6 border border-gray-100 hover:shadow-lg transition rounded-sm">
+                    <div class="text-yamato-main mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">産学連携デザイン</h3>
+                    <p class="text-sm text-gray-600">久留米工業大学ASURAとの連携により、既成概念にとらわれない新しい空間デザインも可能です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: ライフスタイル提案 -->
+    <section class="py-20 bg-yamato-light">
+        <div class="container mx-auto px-4">
+            
+            <!-- 提案1: 二世帯リノベ -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://placehold.jp/600x400.png?text=Two+Generation+House" alt="二世帯住宅リノベーション" class="w-full rounded-sm shadow-xl">
+                        <div class="absolute top-4 left-4 bg-yamato-main text-white font-bold py-1 px-4 text-sm rounded-sm">
+                            実家を継ぐ・同居する
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-3xl font-bold font-serif mb-6 text-yamato-black">
+                        ほどよい距離感の<br>
+                        <span class="text-yamato-main">「二世帯リノベーション」</span>
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        ご実家での同居をお考えの方へ。建て替えよりも予算を抑えながら、キッチンや水回りを分離した「完全分離型」や、一部共有の「融合型」など、ご家族の関係性に合わせたプランをご提案します。
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-yamato-main mr-2">✔</span>
+                            <span class="text-sm text-gray-700"><strong>相続対策：</strong>実家の資産価値を維持・向上させます。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yamato-main mr-2">✔</span>
+                            <span class="text-sm text-gray-700"><strong>補助金活用：</strong>「子育てエコホーム」等の補助金対象になりやすい。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yamato-main mr-2">✔</span>
+                            <span class="text-sm text-gray-700"><strong>プライバシー：</strong>音の問題に配慮した防音施工も可能です。</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-yamato-main font-bold hover:underline flex items-center">
+                        二世帯の施工事例を見る
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 提案2: 古民家再生 -->
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://placehold.jp/600x400.png?text=Kominka+Renovation" alt="古民家再生・梁見せ天井" class="w-full rounded-sm shadow-xl">
+                        <div class="absolute top-4 right-4 bg-yamato-black text-white font-bold py-1 px-4 text-sm rounded-sm">
+                            歴史を紡ぐ
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-3xl font-bold font-serif mb-6 text-yamato-black">
+                        寒さを克服し、趣を残す<br>
+                        <span class="text-yamato-main">「古民家再生」</span>
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        立派な梁や柱、建具など、古い家には今の建材にはない「本物の価値」があります。ヤマト建設は、その趣を最大限に活かしつつ、現代の断熱・耐震技術を組み込むことで、「懐かしいけど、新しい（そして暖かい）」住まいを創ります。
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-yamato-main mr-2">✔</span>
+                            <span class="text-sm text-gray-700"><strong>梁見せデザイン：</strong>天井を抜いて開放的な吹き抜け空間へ。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yamato-main mr-2">✔</span>
+                            <span class="text-sm text-gray-700"><strong>断熱補強：</strong>古民家特有の「底冷え」を徹底的に解消。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yamato-main mr-2">✔</span>
+                            <span class="text-sm text-gray-700"><strong>耐震診断：</strong>現在の基準に合わせた補強で安心をプラス。</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-yamato-main font-bold hover:underline flex items-center">
+                        古民家の施工事例を見る
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 3: 施工の流れ -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold font-serif text-yamato-black">リノベーションの流れ</h2>
+                <p class="text-gray-600 mt-4">ご相談からお引き渡しまで、ワンストップでサポートします。</p>
+            </div>
+
+            <div class="relative">
+                <!-- コネクティングライン (PCのみ) -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-100 -z-10 transform -translate-y-1/2"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-6 text-center group">
+                        <div class="w-16 h-16 bg-yamato-main text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 ring-4 ring-white shadow-md group-hover:scale-110 transition">1</div>
+                        <h4 class="font-bold mb-2">ヒアリング・現地調査</h4>
+                        <p class="text-xs text-gray-500">ご要望をお聞きし、建物の健康状態（耐震・劣化）をプロが診断します。</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-white p-6 text-center group">
+                        <div class="w-16 h-16 bg-gray-200 text-gray-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 ring-4 ring-white shadow-md group-hover:bg-yamato-main group-hover:text-white transition">2</div>
+                        <h4 class="font-bold mb-2">プラン・見積もり提案</h4>
+                        <p class="text-xs text-gray-500">図面、パース、そして「正直な詳細見積もり」と「補助金計画」をご提示。</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-white p-6 text-center group">
+                        <div class="w-16 h-16 bg-gray-200 text-gray-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 ring-4 ring-white shadow-md group-hover:bg-yamato-main group-hover:text-white transition">3</div>
+                        <h4 class="font-bold mb-2">ご契約・着工</h4>
+                        <p class="text-xs text-gray-500">ご納得いただいてから契約。施工中はいつでも現場をご覧いただけます。</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="bg-white p-6 text-center group">
+                        <div class="w-16 h-16 bg-gray-200 text-gray-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 ring-4 ring-white shadow-md group-hover:bg-yamato-main group-hover:text-white transition">4</div>
+                        <h4 class="font-bold mb-2">完成・アフター</h4>
+                        <p class="text-xs text-gray-500">検査を経てお引き渡し。地域密着だからこそ、万が一の時もすぐに駆けつけます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-yamato-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-6">
+                今の家が、もっと好きになる。
+            </h2>
+            <p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+                建て替えか、リノベーションか迷っている方も、まずはご相談ください。<br>
+                建物の状態を見て、最もコストパフォーマンスの良い方法を正直にお答えします。
+            </p>
+            <a href="#" class="inline-block bg-yamato-main hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-sm transition shadow-lg transform hover:-translate-y-1 text-lg">
+                無料診断・相談を申し込む
+            </a>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-yamato-black text-white py-12 border-t-4 border-yamato-main">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm text-gray-500">&copy; Yamato Construction Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
