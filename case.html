@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>施工事例（費用・補助金公開） | 有限会社ヤマト建設</title>
+    <meta name="description" content="ヤマト建設のリノベーション施工事例集。久留米・佐賀エリアの断熱・耐震改修、古民家再生の実績を多数掲載。かかった費用、工期、活用した補助金額も公開しています。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yamato-main': '#EB8A44', // オレンジ
+                        'yamato-black': '#1F2937', // 黒系アクセント
+                        'yamato-bg': '#FFFFFF', // 白背景
+                        'yamato-light': '#FFF4EC', // 薄いオレンジ
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'serif': ['Noto Serif JP', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-yamato-black bg-yamato-bg">
+
+    <!-- ヘッダー (共通) -->
+    <header class="bg-white text-yamato-black py-3 sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1>
+                <a href="index.html" class="flex items-center text-2xl font-bold font-serif group">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2 text-yamato-main" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-yamato-black">有限会社</span><span class="text-yamato-black">ヤマト建設</span>
+                </a>
+            </h1>
+            <nav class="hidden lg:flex items-center space-x-6 font-medium">
+                <a href="performance.html" class="hover:text-yamato-main transition pb-1">性能向上リノベ</a>
+                <a href="renovation.html" class="hover:text-yamato-main transition pb-1">フルリノベ</a>
+                <a href="subsidy.html" class="hover:text-yamato-main transition pb-1">補助金ガイド</a>
+                <a href="#" class="text-yamato-main border-b-2 border-yamato-main pb-1">施工事例</a>
+                <a href="concept.html" class="hover:text-yamato-main transition pb-1">コンセプト</a>
+                <a href="#" class="hover:text-yamato-main transition pb-1">会社案内</a>
+            </nav>
+            <div class="hidden lg:block">
+                <a href="#" class="bg-yamato-main hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-sm transition shadow-md text-sm flex flex-col items-center">
+                    <span>無料診断・相談</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FV: 施工事例トップ -->
+    <div class="relative h-[300px] md:h-[400px] flex items-center justify-center bg-gray-100">
+        <div class="absolute inset-0 bg-gray-200">
+            <!-- 背景パターンや薄い画像 -->
+            <img src="https://placehold.jp/1600x600.png?text=Our+Works" alt="施工事例背景" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="relative z-10 text-center container mx-auto px-4">
+            <p class="text-yamato-main font-bold tracking-widest mb-4 text-lg">CASE STUDY</p>
+            <h2 class="text-3xl md:text-5xl font-bold font-serif leading-tight mb-4 text-yamato-black">
+                施工事例・実績
+            </h2>
+            <p class="text-gray-600 font-medium">
+                費用も、補助金も、すべて公開。<br>
+                あなたの理想に近い事例をお探しください。
+            </p>
+        </div>
+    </div>
+
+    <!-- 検索フィルター -->
+    <section class="bg-white border-b border-gray-200 sticky top-[72px] z-40 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm font-bold">
+                <button class="bg-yamato-black text-white px-4 py-2 rounded-full shadow-sm hover:bg-gray-800 transition">すべて</button>
+                <button class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full hover:bg-yamato-light hover:text-yamato-main transition">性能向上リノベ</button>
+                <button class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full hover:bg-yamato-light hover:text-yamato-main transition">フルリノベ</button>
+                <button class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full hover:bg-yamato-light hover:text-yamato-main transition">古民家再生</button>
+                <button class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full hover:bg-yamato-light hover:text-yamato-main transition">二世帯住宅</button>
+                <div class="border-l border-gray-300 h-6 mx-2 hidden md:block"></div>
+                <select class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full hover:bg-gray-200 focus:outline-none cursor-pointer">
+                    <option>予算で絞り込む</option>
+                    <option>~500万円</option>
+                    <option>500~1000万円</option>
+                    <option>1000万円~</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- 事例一覧 -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- 事例カード 1: 性能向上リノベ（詳細情報付き） -->
+                <a href="#" class="group block bg-white rounded-sm shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full relative">
+                    <!-- 補助金バッジ -->
+                    <div class="absolute top-0 left-0 bg-yamato-main text-white font-bold px-3 py-1 z-10 shadow-md text-sm">
+                        補助金活用: 100万円
+                    </div>
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://placehold.jp/400x300.png?text=Case+1+After" alt="久留米市K様邸After" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-0 right-0 bg-yamato-black bg-opacity-80 text-white text-xs px-2 py-1">久留米市 K様邸</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="mb-2">
+                            <span class="text-xs font-bold text-yamato-main border border-yamato-main px-2 py-0.5 rounded-sm">性能向上</span>
+                            <span class="text-xs font-bold text-gray-500 border border-gray-300 px-2 py-0.5 rounded-sm ml-1">築40年</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-yamato-main transition leading-snug">
+                            底冷えする築40年の家が、<br>Tシャツで過ごせる暖かさに。
+                        </h3>
+                        <div class="mt-auto pt-4 border-t border-gray-100 text-sm text-gray-600 space-y-1">
+                            <p class="flex justify-between"><span>総費用:</span> <span class="font-bold text-yamato-black">850万円</span></p>
+                            <p class="flex justify-between"><span>実質負担:</span> <span class="font-bold text-yamato-main">750万円</span></p>
+                            <p class="flex justify-between"><span>工期:</span> <span>2.5ヶ月</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 事例カード 2: 古民家再生 -->
+                <a href="#" class="group block bg-white rounded-sm shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full relative">
+                    <div class="absolute top-0 left-0 bg-yamato-main text-white font-bold px-3 py-1 z-10 shadow-md text-sm">
+                        補助金活用: 160万円
+                    </div>
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://placehold.jp/400x300.png?text=Case+2+After" alt="佐賀市M様邸After" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-0 right-0 bg-yamato-black bg-opacity-80 text-white text-xs px-2 py-1">佐賀市 M様邸</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                         <div class="mb-2">
+                            <span class="text-xs font-bold text-yamato-main border border-yamato-main px-2 py-0.5 rounded-sm">古民家再生</span>
+                            <span class="text-xs font-bold text-gray-500 border border-gray-300 px-2 py-0.5 rounded-sm ml-1">築60年</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-yamato-main transition leading-snug">
+                            梁を活かした大空間。<br>暗かった台所が光溢れるLDKへ。
+                        </h3>
+                        <div class="mt-auto pt-4 border-t border-gray-100 text-sm text-gray-600 space-y-1">
+                            <p class="flex justify-between"><span>総費用:</span> <span class="font-bold text-yamato-black">1,400万円</span></p>
+                            <p class="flex justify-between"><span>実質負担:</span> <span class="font-bold text-yamato-main">1,240万円</span></p>
+                            <p class="flex justify-between"><span>工期:</span> <span>4ヶ月</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 事例カード 3: 二世帯住宅 -->
+                <a href="#" class="group block bg-white rounded-sm shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full relative">
+                     <div class="absolute top-0 left-0 bg-gray-500 text-white font-bold px-3 py-1 z-10 shadow-md text-sm">
+                        補助金申請中
+                    </div>
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://placehold.jp/400x300.png?text=Case+3+After" alt="二世帯住宅After" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-0 right-0 bg-yamato-black bg-opacity-80 text-white text-xs px-2 py-1">久留米市 S様邸</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                         <div class="mb-2">
+                            <span class="text-xs font-bold text-yamato-main border border-yamato-main px-2 py-0.5 rounded-sm">二世帯リノベ</span>
+                            <span class="text-xs font-bold text-gray-500 border border-gray-300 px-2 py-0.5 rounded-sm ml-1">築35年</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-yamato-main transition leading-snug">
+                            実家を継いで同居。<br>プライバシーを守る完全分離型へ。
+                        </h3>
+                        <div class="mt-auto pt-4 border-t border-gray-100 text-sm text-gray-600 space-y-1">
+                            <p class="flex justify-between"><span>総費用:</span> <span class="font-bold text-yamato-black">1,800万円</span></p>
+                            <p class="flex justify-between"><span>工期:</span> <span>5ヶ月</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- もっと見るボタン -->
+            <div class="text-center mt-12">
+                <button class="bg-white border border-gray-300 text-gray-600 font-bold py-3 px-10 rounded-full hover:bg-gray-100 transition shadow-sm">
+                    事例をもっと見る
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ピックアップ詳細（プロセスの公開） -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-yamato-main font-bold tracking-widest block mb-2">PROCESS REPORT</span>
+                    <h2 class="text-3xl font-bold font-serif text-yamato-black">
+                        完成したら見えない、<br>
+                        「壁の中」こそ美しく。
+                    </h2>
+                    <p class="text-gray-600 mt-4">ヤマト建設は、工事中の写真も包み隠さず公開しています。</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-yamato-light p-8 rounded-sm">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 border-b-2 border-yamato-main inline-block pb-1">久留米市 T様邸 断熱改修工事</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            「とにかく冬が寒い」というご相談。床を剥がしてみると断熱材が入っておらず、地面からの冷気が直撃していました。隙間なく断熱材を充填し、気密テープで処理を行いました。
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="bg-yamato-black text-white text-xs font-bold px-2 py-1 rounded-sm mr-3 mt-1">BEFORE</span>
+                                <p class="text-sm text-gray-700">無断熱の床下。土の湿気が直接上がってきていました。</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="bg-yamato-main text-white text-xs font-bold px-2 py-1 rounded-sm mr-3 mt-1">PROCESS</span>
+                                <p class="text-sm text-gray-700">高性能グラスウールを隙間なく施工。大工の手作業が品質を決めます。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative">
+                            <img src="https://placehold.jp/300x300.png?text=Process+1" alt="施工中の壁内部写真" class="w-full h-full object-cover rounded-sm shadow-md">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1">壁内断熱施工中</span>
+                        </div>
+                        <div class="relative">
+                            <img src="https://placehold.jp/300x300.png?text=Process+2" alt="床下施工写真" class="w-full h-full object-cover rounded-sm shadow-md">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1">床下断熱完了</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Area -->
+    <section class="py-20 bg-yamato-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-6">
+                あなたの家も、<br>
+                ここまで変わります。
+            </h2>
+            <p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+                「ウチは古すぎるから...」と諦めないでください。<br>
+                ご予算の中で、最大限の効果を出すプランをご提案します。
+            </p>
+            <a href="#" class="inline-block bg-yamato-main hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-sm transition shadow-lg transform hover:-translate-y-1 text-lg">
+                無料診断・相談を申し込む
+            </a>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-yamato-black text-white py-12 border-t-4 border-yamato-main">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm text-gray-500">&copy; Yamato Construction Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
