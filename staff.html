@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタッフ紹介 | 有限会社ヤマト建設</title>
+    <meta name="description" content="ヤマト建設のスタッフ紹介ページ。代表の安徳伸一をはじめ、経験豊富なベテラン技術者と、久留米工業大学の学生スタッフたちが、お客様の家づくりをサポートします。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yamato-main': '#EB8A44', // オレンジ
+                        'yamato-black': '#1F2937', // 黒系アクセント
+                        'yamato-bg': '#FFFFFF', // 白背景
+                        'yamato-light': '#FFF4EC', // 薄いオレンジ
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'serif': ['Noto Serif JP', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-yamato-black bg-yamato-bg">
+
+    <!-- ヘッダー (共通) -->
+    <header class="bg-white text-yamato-black py-3 sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1>
+                <a href="index.html" class="flex items-center text-2xl font-bold font-serif group">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2 text-yamato-main" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-yamato-black">有限会社</span><span class="text-yamato-black">ヤマト建設</span>
+                </a>
+            </h1>
+            <nav class="hidden lg:flex items-center space-x-6 font-medium">
+                <a href="performance.html" class="hover:text-yamato-main transition pb-1">性能向上リノベ</a>
+                <a href="renovation.html" class="hover:text-yamato-main transition pb-1">フルリノベ</a>
+                <a href="subsidy.html" class="hover:text-yamato-main transition pb-1">補助金ガイド</a>
+                <a href="works.html" class="hover:text-yamato-main transition pb-1">施工事例</a>
+                <a href="concept.html" class="hover:text-yamato-main transition pb-1">コンセプト</a>
+                <a href="company.html" class="hover:text-yamato-main transition pb-1">会社案内</a>
+            </nav>
+            <div class="hidden lg:block">
+                <a href="#" class="bg-yamato-main hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-sm transition shadow-md text-sm flex flex-col items-center">
+                    <span>無料診断・相談</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FV: スタッフ紹介トップ -->
+    <div class="relative h-[300px] md:h-[400px] flex items-center justify-center bg-gray-100">
+        <div class="absolute inset-0">
+             <img src="https://placehold.jp/1600x600.png?text=Team+Yamato" alt="スタッフ集合写真" class="w-full h-full object-cover opacity-60">
+        </div>
+        <div class="relative z-10 text-center container mx-auto px-4">
+            <p class="text-yamato-main font-bold tracking-widest mb-4 text-lg">OUR TEAM</p>
+            <h2 class="text-3xl md:text-5xl font-bold font-serif leading-tight mb-4 text-yamato-black">
+                私たちが担当します
+            </h2>
+            <p class="text-gray-700 font-medium text-lg">
+                ベテランの経験と、若手の感性。<br>
+                最高のチームで、あなたの家づくりを支えます。
+            </p>
+        </div>
+    </div>
+
+    <!-- 代表取締役紹介 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-5/12">
+                        <div class="relative">
+                             <img src="https://placehold.jp/500x600.png?text=President+Antoku" alt="代表取締役 安徳伸一" class="w-full rounded-sm shadow-lg h-[500px] object-cover grayscale hover:grayscale-0 transition duration-500">
+                             <div class="absolute bottom-4 left-4 bg-white bg-opacity-90 p-4 border-l-4 border-yamato-main">
+                                 <p class="text-xs text-gray-500 mb-1">Representative Director</p>
+                                 <p class="font-bold text-xl font-serif">安徳 伸一</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="md:w-7/12">
+                        <h3 class="text-2xl font-bold font-serif mb-4 text-yamato-black">
+                            「見えない部分」にこだわるのが、<br>
+                            本当のプロの仕事です。
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            建設業界に入り数十年。新築からリフォームまで、数多くの現場を見てきました。私が一番大切にしているのは、「完成したら見えなくなる部分」の施工品質です。
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            お客様は、綺麗な壁紙や最新のキッチンに目が行きがちです。しかし、家の寿命を決めるのは、壁の中の断熱材や、床下の配管、そして構造躯体です。ここを手を抜けば、どんなに立派な家も長持ちしません。
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            私は口下手な職人肌かもしれませんが、見積もりの透明性と、施工の正確さには絶対の自信があります。どうぞ安心してお任せください。
+                        </p>
+                        
+                        <div class="bg-gray-50 p-6 rounded-sm border border-gray-200">
+                            <h4 class="font-bold text-sm text-yamato-black mb-3 border-b border-gray-300 pb-2 inline-block">保有資格・得意分野</h4>
+                            <ul class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>一級建築施工管理技士</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>二級建築士</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>増改築相談員</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>耐震診断・改修設計</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 営業部長紹介 -->
+    <section class="py-20 bg-yamato-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                    <div class="md:w-5/12">
+                         <div class="relative">
+                             <img src="https://placehold.jp/500x600.png?text=Manager+Yonetani" alt="営業部長 米谷" class="w-full rounded-sm shadow-lg h-[500px] object-cover grayscale hover:grayscale-0 transition duration-500">
+                             <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 p-4 border-r-4 border-yamato-main text-right">
+                                 <p class="text-xs text-gray-500 mb-1">Sales Manager</p>
+                                 <p class="font-bold text-xl font-serif">米谷 [名]</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="md:w-7/12">
+                        <h3 class="text-2xl font-bold font-serif mb-4 text-yamato-black">
+                            お客様の「不安」を「安心」に変える。<br>
+                            それが私の役割です。
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            リノベーションは、新築以上に「わからないこと」が多いものです。「予算は足りるか」「本当に暖かくなるか」「工事中の生活はどうなるか」。そんな不安を一つひとつ解消し、最適なプランを一緒に作り上げていくのが私の仕事です。
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            社長の右腕として、現場の状況も常に把握しています。「営業マン」としてではなく、お客様の「家づくりのパートナー」として、どんな小さな悩みでもご相談ください。
+                        </p>
+                        
+                        <div class="bg-white p-6 rounded-sm border border-gray-200">
+                            <h4 class="font-bold text-sm text-yamato-black mb-3 border-b border-gray-300 pb-2 inline-block">保有資格・得意分野</h4>
+                            <ul class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>宅地建物取引士</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>住宅ローンアドバイザー</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>補助金活用提案</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-yamato-main rounded-full mr-2"></span>二世帯住宅プランニング</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学生スタッフ・連携チーム -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-yamato-main font-bold tracking-widest block mb-2">FUTURE ARCHITECTS</span>
+                <h2 class="text-3xl font-bold font-serif text-yamato-black">
+                    未来の建築家たち
+                </h2>
+                <p class="text-gray-600 mt-4">久留米工業大学（ASURAなど）の学生スタッフも活躍中。<br>若い感性とデジタルスキルで、提案の幅を広げています。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- 学生スタッフ 1 -->
+                <div class="bg-white rounded-sm shadow-md overflow-hidden border border-gray-100 group hover:shadow-xl transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://placehold.jp/400x400.png?text=Student+Staff+A" alt="学生スタッフA" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-xs text-yamato-main font-bold mb-1">久留米工業大学 建築学科</p>
+                        <h4 class="font-bold text-lg mb-2">設計・デザイン担当</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            最新の3D CADを駆使して、リノベーション後のイメージパースを作成しています。「わかりやすい！」と言っていただけるよう頑張ります。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 学生スタッフ 2 -->
+                <div class="bg-white rounded-sm shadow-md overflow-hidden border border-gray-100 group hover:shadow-xl transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://placehold.jp/400x400.png?text=Student+Staff+B" alt="学生スタッフB" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-xs text-yamato-main font-bold mb-1">ASURA プロジェクトメンバー</p>
+                        <h4 class="font-bold text-lg mb-2">企画・イベント担当</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            学生団体での経験を活かし、地域イベントやワークショップの企画に関わっています。楽しい家づくりを提案したいです。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- チーム全体・指導風景 -->
+                <div class="bg-yamato-black rounded-sm shadow-md overflow-hidden text-white flex flex-col justify-center p-8 relative group">
+                    <div class="absolute inset-0 opacity-20 group-hover:opacity-30 transition">
+                         <img src="https://placehold.jp/400x400.png?text=Meeting" alt="ミーティング風景" class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative z-10 text-center">
+                        <h4 class="font-bold text-xl mb-4 font-serif">ベテラン × 若手</h4>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                            学生の自由な発想を、安徳社長や熟練の職人が技術的にサポートし、実現可能なプランに落とし込みます。<br>
+                            世代を超えたチームワークが、ヤマト建設の強みです。
+                        </p>
+                        <a href="company.html" class="text-yamato-main font-bold text-sm hover:underline">→ 産学連携の詳細はこちら</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 資格一覧 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h3 class="text-xl font-bold mb-8 text-yamato-black border-b-2 border-yamato-main inline-block pb-2">ヤマト建設の保有資格一覧</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white px-4 py-2 rounded-sm border border-gray-200 shadow-sm text-sm font-medium">一級建築施工管理技士</span>
+                <span class="bg-white px-4 py-2 rounded-sm border border-gray-200 shadow-sm text-sm font-medium">二級建築士</span>
+                <span class="bg-white px-4 py-2 rounded-sm border border-gray-200 shadow-sm text-sm font-medium">宅地建物取引士</span>
+                <span class="bg-white px-4 py-2 rounded-sm border border-gray-200 shadow-sm text-sm font-medium">増改築相談員</span>
+                <span class="bg-white px-4 py-2 rounded-sm border border-gray-200 shadow-sm text-sm font-medium">住宅ローンアドバイザー</span>
+                <span class="bg-white px-4 py-2 rounded-sm border border-gray-200 shadow-sm text-sm font-medium">木造住宅耐震診断士</span>
+                <span class="bg-white px-4 py-2 rounded-sm border border-gray-200 shadow-sm text-sm font-medium">既存住宅状況調査技術者</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-yamato-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-6">
+                私たちが、責任を持って<br>担当いたします。
+            </h2>
+            <p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+                まずはお話しすることから始めませんか？<br>
+                ご家族の想いを、ぜひお聞かせください。
+            </p>
+            <a href="#" class="inline-block bg-yamato-main hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-sm transition shadow-lg transform hover:-translate-y-1 text-lg">
+                無料診断・相談を申し込む
+            </a>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-yamato-black text-white py-12 border-t-4 border-yamato-main">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm text-gray-500">&copy; Yamato Construction Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
